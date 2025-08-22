@@ -1,107 +1,97 @@
-Certainly! Below is a sample `README.md` file for a simple AI Snake game implemented using reinforcement learning. This example assumes that you have a basic understanding of reinforcement learning and its concepts.
+# 🐍 SnakeGame
 
-```markdown
-# AI Snake Game with Reinforcement Learning
+<div align="center">
 
-This repository contains a Python implementation of the classic Snake game, where the snake is controlled by a reinforcement learning (RL) agent. The RL agent is trained using Q-learning to play the game optimally.
+[![GitHub stars](https://img.shields.io/github/stars/rithaa24/snakegame?style=for-the-badge)](https://github.com/rithaa24/snakegame/stargazers)
 
-## Table of Contents
+[![GitHub forks](https://img.shields.io/github/forks/rithaa24/snakegame?style=for-the-badge)](https://github.com/rithaa24/snakegame/network)
 
-- [Introduction](#introduction)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Training the Agent](#training-the-agent)
-- [Results](#results)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
+[![GitHub issues](https://img.shields.io/github/issues/rithaa24/snakegame?style=for-the-badge)](https://github.com/rithaa24/snakegame/issues)
 
-## Introduction
+[![GitHub license](https://img.shields.io/github/license/rithaa24/snakegame?style=for-the-badge)](LICENSE)
 
-The Snake game is a popular arcade game where the player controls a snake that moves around the screen, eating food and growing longer. The objective is to avoid colliding with the walls or itself while maximizing the length of the snake.
+**Two implementations of the classic Snake game in Python.**
 
-In this project, we use reinforcement learning to train an AI agent to play the Snake game. Specifically, we employ Q-learning, a model-free RL algorithm, to learn an optimal policy for controlling the snake.
+</div>
 
-## Requirements
+## 📖 Overview
 
-- Python 3.7 or higher
-- `numpy`
-- `pygame`
-- `matplotlib` (for plotting training results)
+This repository contains two Python implementations of the classic Snake game: one controlled manually by the player, and another using a simple AI.  The game is implemented using the Pygame library.  This project is suitable for beginners learning Python and game development with Pygame.
 
-You can install the required packages using `pip`:
 
-```bash
-pip install numpy pygame matplotlib
-```
+## ✨ Features
 
-## Installation
+- **Manual Snake Game:** Play the game using the arrow keys.
+- **AI Snake Game:** Observe a simple AI playing the game.
+- **Clear Visuals:**  Basic, functional graphics using Pygame.
+- **Score Tracking:**  The game keeps track of the player's (or AI's) score.
+- **Game Over Condition:** The game ends when the snake collides with itself or the boundary.
 
-1. Clone this repository:
 
-    ```bash
-    git clone https://github.com/yourusername/ai-snake-game.git
-    cd ai-snake-game
-    ```
+## 🛠️ Tech Stack
 
-2. Install the required dependencies:
+- **Language:** Python
+- **Library:** Pygame
 
-    ```bash
-    pip install -r requirements.txt
-    ```
 
-## Usage
+## 🚀 Quick Start
 
-To run the Snake game with a pre-trained agent, use the following command:
+### Prerequisites
 
-```bash
-python play_snake.py
-```
+- Python 3.x (tested with 3.9)
+- Pygame library: `pip install pygame`
 
-If you want to train a new agent from scratch, use:
 
-```bash
-python train_agent.py
-```
+### Installation
 
-This will start the training process and save the trained model to a file.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/rithaa24/snakegame.git
+   cd snakegame
+   ```
 
-## Training the Agent
+2. **Install Pygame (if not already installed):**
+   ```bash
+   pip install pygame
+   ```
 
-The training process involves running the Snake game in a loop where the agent learns from its actions using the Q-learning algorithm. The training script `train_agent.py` handles the setup and execution of this process.
 
-### Parameters
+### Running the Games
 
-You can configure the training parameters in `train_agent.py`:
+- **Manual Snake Game:**
+   ```bash
+   python Manual_SnakeGame.py
+   ```
 
-- `epsilon`: The exploration rate, which determines the balance between exploration and exploitation.
-- `alpha`: The learning rate for Q-value updates.
-- `gamma`: The discount factor for future rewards.
-- `episodes`: The number of episodes for training.
+- **AI Snake Game:**
+   ```bash
+   python AI_SnakeGame.py
+   ```
 
-Adjust these parameters as needed to fine-tune the training process.
 
-## Results
-
-After training, you can visualize the performance of the agent by running:
-
-```bash
-python plot_results.py
-```
-
-This script generates plots showing the agent's performance over time, including metrics like average reward and length of the snake.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- The Snake game code is inspired by various sources available online.
-- Reinforcement learning concepts are based on materials from [Sutton & Barto's "Reinforcement Learning"](http://incompleteideas.net/book/the-book.html).
-
-Feel free to contribute to the project by submitting issues or pull requests. Enjoy experimenting with AI and reinforcement learning!
+## 📁 Project Structure
 
 ```
+snakegame/
+├── AI_SnakeGame.py     # AI-controlled Snake game implementation.
+├── Manual_SnakeGame.py  # Manually controlled Snake game implementation.
+└── README.md           # This file.
+```
 
-Feel free to modify this `README.md` to better fit the specifics of your implementation or any additional features you might have included.
+## 🤝 Contributing
+
+Contributions are welcome!  Please open an issue to discuss proposed changes.
+
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. (Note:  A LICENSE file is not currently present in the repository. Adding one with an appropriate open-source license is recommended.)
+
+---
+
+<div align="center">
+
+**Made with ❤️ by rithaa24**
+
+</div>
+
